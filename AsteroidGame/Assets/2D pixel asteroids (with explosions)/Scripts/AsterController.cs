@@ -6,6 +6,8 @@ public class AsterController : DestroyAfterExpl
 {
     bool explInProgress = false;
 
+    public GameObject explosionPrefab;
+
     Animator animator;
     // Start is called before the first frame update
     void Start()
@@ -17,6 +19,8 @@ public class AsterController : DestroyAfterExpl
     {
         if (!explInProgress)
         {
+            Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+            Destroy(gameObject); // Destroys the asteroid
             explInProgress = true;
             animator.SetBool("expl", true);
         }
