@@ -589,7 +589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4a371d56fd264e41bb4b622fdca004e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacle: {fileID: 7445009202159117197, guid: 427a3af0c35ef9f4cbdec62ab79a9f71, type: 3}
+  obstacle: {fileID: 867419191962258073, guid: 51de69c9608ad4449a404d381853b58f, type: 3}
   maxX: 44
   minX: -44
   ySpawnPoint: 23.6
