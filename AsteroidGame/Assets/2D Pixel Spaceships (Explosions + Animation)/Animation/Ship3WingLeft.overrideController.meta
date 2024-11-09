@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 37373d022a1930c4a8fbb170d8823529
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 22100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 133283
+  packageName: 2D Pixel Spaceships (Explosions + Animation)
+  packageVersion: 1.0
+  assetPath: Assets/2D Pixel Spaceships (Explosions + Animation)/Animation/Ship3WingLeft.overrideController
+  uploadId: 279519

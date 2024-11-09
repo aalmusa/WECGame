@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 23a8852236365fa43a8355dea9c5786c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 136476
+  packageName: 2D Pixel Asteroids (With Explosions)
+  packageVersion: 1.0
+  assetPath: Assets/2D pixel asteroids (with explosions)/Animations/Controllers/AsterBig3Contr.overrideController
+  uploadId: 286178

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0adc5d46dfc37a84fbafc1b9d245b67e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 22100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 133283
+  packageName: 2D Pixel Spaceships (Explosions + Animation)
+  packageVersion: 1.0
+  assetPath: Assets/2D Pixel Spaceships (Explosions + Animation)/Animation/Ship6Bomb.overrideController
+  uploadId: 279519
