@@ -3,7 +3,8 @@ using UnityEngine;
 
 public class ObstacleSpawning : MonoBehaviour
 {
-    public GameObject obstacle;
+    public GameObject[] asteroids;
+
     public float maxX;
     public float minX;
     public float ySpawnPoint;
@@ -30,6 +31,9 @@ public class ObstacleSpawning : MonoBehaviour
     {
         float x = Random.Range(minX, maxX);
         float y = ySpawnPoint;
+
+        int randAs = Random.Range(1,19);
+        GameObject obstacle = asteroids[randAs];
 
         Instantiate(obstacle, transform.position + new Vector3(x, y, 0), transform.rotation);
     }
