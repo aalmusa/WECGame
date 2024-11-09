@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2411503ed47c40b469860f18c364972a
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 136476
+  packageName: 2D Pixel Asteroids (With Explosions)
+  packageVersion: 1.0
+  assetPath: Assets/2D pixel asteroids (with explosions)/Prefabs/Asteroids/AsterMed1-base.prefab
+  uploadId: 286178

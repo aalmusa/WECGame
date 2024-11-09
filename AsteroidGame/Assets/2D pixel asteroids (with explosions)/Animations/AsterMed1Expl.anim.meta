@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 38e5ad34717e136488ecacf23b60b05b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 136476
+  packageName: 2D Pixel Asteroids (With Explosions)
+  packageVersion: 1.0
+  assetPath: Assets/2D pixel asteroids (with explosions)/Animations/AsterMed1Expl.anim
+  uploadId: 286178

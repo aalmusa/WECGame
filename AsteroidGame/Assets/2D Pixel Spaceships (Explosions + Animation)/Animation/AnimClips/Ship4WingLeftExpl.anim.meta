@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 954e08e408c46414787b7e33a1c4eff1
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 133283
+  packageName: 2D Pixel Spaceships (Explosions + Animation)
+  packageVersion: 1.0
+  assetPath: Assets/2D Pixel Spaceships (Explosions + Animation)/Animation/AnimClips/Ship4WingLeftExpl.anim
+  uploadId: 279519

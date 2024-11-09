@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 44bcbe753c3cdc54292d305f054d3574
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 136476
+  packageName: 2D Pixel Asteroids (With Explosions)
+  packageVersion: 1.0
+  assetPath: Assets/2D pixel asteroids (with explosions)/Animations/AsterBig3Expl.anim
+  uploadId: 286178
