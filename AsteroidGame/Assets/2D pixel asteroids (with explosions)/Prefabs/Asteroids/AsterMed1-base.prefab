@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1562633544726829655}
   - component: {fileID: 5826135195937627020}
   - component: {fileID: -3015753222068614750}
+  - component: {fileID: -912330781586234831}
   m_Layer: 0
   m_Name: AsterMed1-base
   m_TagString: Untagged
@@ -161,7 +162,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad9b41f1583edd1429bde5bdd11daed9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionPrefab: {fileID: 0}
 --- !u!50 &-3015753222068614750
 Rigidbody2D:
   serializedVersion: 5
@@ -177,7 +177,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0.75
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -189,3 +189,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-912330781586234831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9125877684690196866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd17fabe7ea704b3b84d337b66ff1ad0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -5,9 +5,6 @@ using UnityEngine;
 public class AsterController : DestroyAfterExpl
 {
     bool explInProgress = false;
-
-    public GameObject explosionPrefab;
-
     Animator animator;
     // Start is called before the first frame update
     void Start()
@@ -15,12 +12,17 @@ public class AsterController : DestroyAfterExpl
         animator = GetComponent<Animator>();
     }
 
+    private void OnTriggerEnter2D(Collider2D other){
+        if(other.CompareTag("Bullet")){
+            StartExplosion();
+            Destroy(other.gameObject);
+        }
+    }
+
     public void StartExplosion()
     {
         if (!explInProgress)
         {
-            Instantiate(explosionPrefab, transform.position, Quaternion.identity);
-            Destroy(gameObject); // Destroys the asteroid
             explInProgress = true;
             animator.SetBool("expl", true);
         }

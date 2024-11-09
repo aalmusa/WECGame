@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 5445050992052598303}
   - component: {fileID: 5856903854646786455}
   - component: {fileID: 4547724693218737074}
-  - component: {fileID: 439916622917310505}
+  - component: {fileID: 7371164379498030095}
+  - component: {fileID: 91673090630686953}
   m_Layer: 0
   m_Name: AsterBig1-base
   m_TagString: Untagged
@@ -162,7 +163,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad9b41f1583edd1429bde5bdd11daed9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionPrefab: {fileID: 0}
 --- !u!114 &4547724693218737074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,12 +175,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4a371d56fd264e41bb4b622fdca004e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacle: {fileID: 0}
+  asteroids: []
   maxX: 44.5
   minX: -44.45
   ySpawnPoint: 25
   timeBetweenSpawn: 5
---- !u!50 &439916622917310505
+--- !u!114 &7371164379498030095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867419191962258073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd17fabe7ea704b3b84d337b66ff1ad0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &91673090630686953
 Rigidbody2D:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -195,7 +207,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0.75
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
