@@ -32,7 +32,7 @@ public class ObstacleSpawning : MonoBehaviour
         float x = Random.Range(minX, maxX);
         float y = ySpawnPoint;
 
-        int randAs = Random.Range(1,19);
+        int randAs = Random.Range(0, asteroids.Length);
         GameObject obstacle = asteroids[randAs];
 
         Instantiate(obstacle, transform.position + new Vector3(x, y, 0), transform.rotation);

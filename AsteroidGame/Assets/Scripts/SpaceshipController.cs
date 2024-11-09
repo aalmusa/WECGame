@@ -42,10 +42,5 @@ public class SpaceshipController : MonoBehaviour
         {
             bulletStarter.StopRepeatFire();
         }
-
-        if (Input.GetKeyDown(KeyCode.B))
-        {
-            bulletStarter.LaunchBomb();
-        }
     }
 }

@@ -179,7 +179,7 @@ MonoBehaviour:
   bulletSpeed: 2
   fireDelay: 0.5
   fireInSequence: 0
-  bombPrefab: {fileID: 0}
+  bombPrefab: {fileID: 1887115017484238, guid: 0fadafdd3d8fcba458cc2f1fd255c444, type: 3}
   bombStartPos: {fileID: 0}
   bombSpeed: 0
 --- !u!1 &1721445773521276

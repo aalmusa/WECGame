@@ -3,7 +3,7 @@ using UnityEngine;
 public class ShootThem : MonoBehaviour
 {
     public GameObject projectilePrefab; // Drag your projectile prefab here
-    public Transform firePoint;         // Assign a firing point (empty GameObject on the ship's front)
+    public Transform[] firePoint;         // Assign a firing point (empty GameObject on the ship's front)
     private Transform target;           // Reference to the main character's Transform
     public float projectileSpeed = 10f; // Set the speed of the projectile
     public float fireRate = 2f;         // Set how often the ship fires
@@ -37,8 +37,9 @@ public class ShootThem : MonoBehaviour
         if (distance < 30)
         {
             // Instantiate projectile and set its initial position and rotation
-            GameObject projectile = Instantiate(projectilePrefab, firePoint.position, Quaternion.identity);
-
+            for(int i = 0; i < firePoint.Length; i++){
+                GameObject projectile = Instantiate(projectilePrefab, firePoint[i].position, Quaternion.identity);
+            
             // Set the projectile's Rigidbody velocity and disable gravity
             Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
             rb.gravityScale = 0;                 // Ensure gravity does not affect the projectile
@@ -47,6 +48,7 @@ public class ShootThem : MonoBehaviour
 
             // Optional: Destroy the projectile after a certain time to avoid clutter
             Destroy(projectile, 5f);
+            }
         }
     }
 

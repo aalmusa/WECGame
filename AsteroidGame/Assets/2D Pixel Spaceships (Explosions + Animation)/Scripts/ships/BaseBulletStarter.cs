@@ -18,11 +18,6 @@ namespace AllShips
         [Tooltip("Should bullets appear one after another or all at once. Use for ships with many bulletStartPoses")]
         public bool fireInSequence;
 
-        [Space(20)]
-        public GameObject bombPrefab;
-        public Transform bombStartPos;
-        public float bombSpeed;
-
         bool repeatFire = false;
         int fireIndex = 0;
 
@@ -39,14 +34,6 @@ namespace AllShips
                 rb.linearVelocity = bulletSpeed * (-bulletStartPoses[index].up);
             }
         }
-
-        public void LaunchBomb()
-        {
-            GameObject bomb = (GameObject)Instantiate(bombPrefab, bombStartPos.position, bombStartPos.rotation);
-            Rigidbody2D rb = bomb.GetComponent<Rigidbody2D>();
-            rb.linearVelocity = bombSpeed * (-transform.up);
-        }
-
         bool IfIndexGood(int index)
         {
             if (bulletStartPoses != null && index >= 0 && index < bulletStartPoses.Length)

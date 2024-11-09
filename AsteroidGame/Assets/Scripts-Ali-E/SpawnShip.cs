@@ -2,8 +2,9 @@ using UnityEngine;
 
 public class SpawnShip : MonoBehaviour
 {
-    public GameObject obstacle;
-    public GameObject player;
+    public GameObject[] ships;
+    int counter2 = 0;
+    private GameObject player;
     public float maxX;
     public float minX;
     public float ySpawnPoint;
@@ -26,6 +27,7 @@ public class SpawnShip : MonoBehaviour
             spawnTime = Time.time + timeBetweenSpawn;
             numberOfSpawns++;
         }
+    
 
     }
 
@@ -33,6 +35,9 @@ public class SpawnShip : MonoBehaviour
     {
         float x = player.transform.position.x - 10;
         float y = player.transform.position.y - 10;
+
+        GameObject obstacle = ships[counter2%5];
+        counter2++;
 
         Instantiate(obstacle, transform.position + new Vector3(x, y, 0), transform.rotation);
     }
