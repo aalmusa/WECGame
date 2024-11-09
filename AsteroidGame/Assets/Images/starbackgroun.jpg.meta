@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      starbackgroun_0: 3620695213202144197
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
