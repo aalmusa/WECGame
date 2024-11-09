@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 8dd1898199e08a54bab282ca9c3f8b65
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 136476
+  packageName: 2D Pixel Asteroids (With Explosions)
+  packageVersion: 1.0
+  assetPath: Assets/2D pixel asteroids (with explosions)/Prefabs/Asteroids/AsterSmall4.prefab
+  uploadId: 286178

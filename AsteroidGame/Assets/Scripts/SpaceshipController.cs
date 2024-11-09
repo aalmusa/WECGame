@@ -1,14 +1,16 @@
 using UnityEngine;
-
+using AllShips;
 public class SpaceshipController : MonoBehaviour
 {
     public float speed = 5f;
+    private BaseBulletStarter bulletStarter;
 
     private Camera mainCamera;
 
     void Start()
     {
         mainCamera = Camera.main;
+        bulletStarter = GetComponent<BaseBulletStarter>();
     }
 
     void Update()
@@ -30,5 +32,20 @@ public class SpaceshipController : MonoBehaviour
 
         // Apply the clamped position
         transform.position = newPosition;
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            bulletStarter.StartRepeateFire();
+        }
+        
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            bulletStarter.StopRepeatFire();
+        }
+
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            bulletStarter.LaunchBomb();
+        }
     }
 }
